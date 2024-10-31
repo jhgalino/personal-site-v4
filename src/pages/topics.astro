@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("posts");
+const topics = Array.from(new Set(posts.flatMap((post) => post.data.topics)));
+---
+
+<BaseLayout>
+  <Fragment slot="header">
+    <h1>Topics</h1>
+    <em>aka tags in other sites</em>
+  </Fragment>
+  <ul>
+    {
+      topics.map((topic) => (
+        <li>
+          <a href={`/topics/${topic.toLowerCase()}`}>{topic}</a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
+
+<style>
+  ul {
+    list-style-type: armenian;
+  }
+</style>

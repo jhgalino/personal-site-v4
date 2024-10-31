@@ -1,16 +1,42 @@
 ---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+const posts = await getCollection('posts');
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	<Fragment slot="header">
+		<h1>John Henry Galino</h1>
+		<em>a (mostly) web developer</em>
+	</Fragment>
+	<main>
+		<p>Hello! You have reached my website.</p>
+		<p>To learn more about me, go to the <a href="/about">About</a> page.</p>
+		<p>
+			For prior work or side projects, look for the posts under the
+			<a href="/topics/projects">Projects</a> topic.
+		</p>
+		<h3>Recent Posts</h3>
+		<ul>
+			{posts.map(post => <li>
+				<div class="post">
+					<p><a href={`/posts/${post.slug}`}>{post.data.title}</a></p>
+					<p>{post.data.date}</p>
+				</div>
+			</li>)}
+		</ul>
+	</main>
+</BaseLayout>
+
+<style>
+	ul {
+		list-style-type: armenian;
+	}
+
+	.post {
+		display: flex;
+		justify-content: space-between;
+		min-height: 15em;
+	}
+</style>

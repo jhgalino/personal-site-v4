@@ -1,0 +1,52 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import "simpledotcss/simple.min.css";
+
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title ?? "Henry's Site"}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/topics">Topics</a>
+      </nav>
+      <slot name="header" />
+    </header>
+    <slot />
+    <footer>
+      <p>
+        Created with <a href="https://astro.build">Astro</a> and <a
+          href="https://simplecss.org/">Simple.css</a
+        >.
+      </p>
+      <p>
+        Source code for this site is licensed under the <a
+          href="https://www.mozilla.org/en-US/MPL/2.0/"
+          >Mozilla Public License v. 2.0</a
+        >.
+        <p>
+          Blog posts are licensed under <a
+            href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a
+          >.
+        </p>
+      </p>
+      <a href="">Source code for this site</a>
+    </footer>
+  </body>
+</html>

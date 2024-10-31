@@ -1,0 +1,100 @@
+---
+title: 'Previous Projects'
+date: 'October 31, 2024'
+topics: ['Projects']
+excerpt: "Projects that I've taken part of in the past"
+---
+import { Picture } from 'astro:assets';
+import Vax from './../../assets/vax-screenshot.webp';
+import Resc from './../../assets/mvp-slides.webp';
+
+In this post, I will detail some projects that I've had a hand in before I
+created this site. Since I'll be writing about my future side projects in these
+posts anyway, it makes sense to also have my previous projects in a blog post
+too.
+
+These are the projects I'll be writing about:
+
+1. Vax
+2. RESC
+3. web-scrape-rs
+
+### Vax
+
+<Picture src={Vax} formats={['avif', 'webp']} 
+  alt='A game screen featuring a map of the Philippines'/>
+
+Vax is a mobile video game for Android made with Godot. This was actually a
+school project for CS 191 and 192, which required us to plan out and implement
+a software project. The team that made this consisted of me, Aira Aloveros, Kurt
+Ian Khalid Israel, and Jeremy Vincent Yu. In this project, we had a flat structure
+of leadership, where we just laid out what needs to be done on weekly standups, 
+and then divide up the work between us. 
+
+The video game was about managing a pandemic in the Philippines. It was actually
+a timely topic because we were still locked in our homes due to COVID-19 when we
+made this game. It's a somewhat more complicated Plague Inc. at its core, 
+where you get money to find parts of the vaccine. Once you get parts, it's up to
+you to combine them and test it out to patients before releasing them to the public.
+The mechanic of combining parts to make vaccines and testing them out was partly
+inspired by the different vaccines being released with varying effectiveness 
+(Pfizer, Gamelan, J&J).
+
+Trying out Godot 3 for this game was fun for me, since I've ardently followed
+Godot's progress since the release of Godot 3. I like the flexibility of scenes,
+and for a simple game like this, Godot really shines through with its small size
+and an actual 2D renderer. However, having flexibility also meant that
+we had to figure out some things for ourselves, like how to switch scenes while
+retaining the state of the game. But I get it though. Every game is different,
+which means every game might need a different solution for that. Personally,
+I had fun thinking up of a solution for our problem, and it wasn't that hard to 
+code it once I understood how our scene-switching system would work. I'd still
+recommend Godot for anyone getting into game development. OSS FTW!
+
+You can find the code for our game [here](https://github.com/Vax-CS192/Vax).
+
+### RESC
+
+<div style="display: flex; justify-content: center;">
+  <Picture src={Resc} formats={['avif', 'webp']} 
+    alt='A phone screen showing a screen of the RESC application'/>
+</div>
+
+
+RESC is the Residential Electrical Service Calculator, a school project for 
+Engineering 150. It is an app meant to help electrical engineers solve the 
+electrical load of a single-family dwelling unit as prescribed by the Philippine
+Electical Code. It was made with Dart and Flutter, and I really enjoyed making
+it since it was the first time in a while that I was able to break out Dart and
+Flutter.
+
+I was the lone programmer who worked on this, but the idea and design wasn't done
+by me. This was a group project, and I think someone else gave the idea in the 
+first place, and someone else also designed the UI of the app.
+Unfortunately, I am not able to remember all the people who worked on this project 
+(except for Zaira dela Calzada, who was a blockmate of
+mine in my first year in UP Diliman), so if you're one of them, I thank you greatly
+for the contribution.
+
+To be honest, I think this app has a lot of potential to be useful to electrical
+engineers in the Philippines. It's a shame that we never bothered to release
+it on Google Play, but we all had other responsibilities to do, and it's open-source
+anyway. I might be tempted to place it on F-Droid one day if it catches my interest,
+but for now, I have other things to do so I can't attend to it.
+
+### web-scrape-rs
+
+(Sorry I don't have a picture; it's a CLI program.)
+
+This is a simple CLI program to get the HTML of a website. It was written in Rust, 
+and I made it as a practice project back when I was learning Rust. I used the 
+`reqwest` library for this and it's easy to use.
+
+I don't have much to say about this project. It's a fairly simple one, even though
+written in a language with a steep learning curve. Unfortunately, I haven't been
+writing Rust for a few years now since I don't really have a use for it, but I really
+owe Rust a lot for introducing me to the wonders of static typing and functional
+programming. I really wish Typescript would introduce the `Result` and `Option`
+types because they make programming so much better.
+
+Anyway, that's all of the projects I'll talk about. I hope I can write more in the future!

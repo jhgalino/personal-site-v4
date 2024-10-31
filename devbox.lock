@@ -1,0 +1,290 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "bashInteractive@latest": {
+      "last_modified": "2024-10-26T14:05:56Z",
+      "resolved": "github:NixOS/nixpkgs/4e0eec54db79d4d0909f45a88037210ff8eaffee#bashInteractive",
+      "source": "devbox-search",
+      "version": "5.2p32",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jin4ifpw4bvi554g02phy668gvaylqn1-bash-interactive-5.2p32",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/safhaq1g0lj6x7d7nbf25xqd3sr3g4fa-bash-interactive-5.2p32-man",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/56w97znhrv1w2wvzm5dz1yi6gzz2xgsb-bash-interactive-5.2p32-dev"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/pqjnr9kmnk1gppwfxdg53w9w100d8ppb-bash-interactive-5.2p32-doc"
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/yqbzid6i904zfsk187nn0y9nwj6lxnzv-bash-interactive-5.2p32-info"
+            }
+          ],
+          "store_path": "/nix/store/jin4ifpw4bvi554g02phy668gvaylqn1-bash-interactive-5.2p32"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7031c1bwpqvmsfnzd0v50vd6v2lb1kni-bash-interactive-5.2p32",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/vkdp5328nmrp0aaxfcxywy9xrqx4g4mw-bash-interactive-5.2p32-man",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/jm6cnkppglv37fpmpn6jqml5yc27vayv-bash-interactive-5.2p32-dev"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/ciwjdj1x0rrgwpc83fzg0v9w3l6fwplj-bash-interactive-5.2p32-doc"
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/kw3gk8c5dijwj792jmkyfaaajf97fzy2-bash-interactive-5.2p32-info"
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/pbqf4qklm6jzy8f148yvpl5d35zhl54i-bash-interactive-5.2p32-debug"
+            }
+          ],
+          "store_path": "/nix/store/7031c1bwpqvmsfnzd0v50vd6v2lb1kni-bash-interactive-5.2p32"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ci1awvn1fa7wi13pf6rc0603hcg64sg3-bash-interactive-5.2p32",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/fgsz79dddv8ziii7sxyfqlymngzz1220-bash-interactive-5.2p32-man",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/yv9fss1fw5gsml48zskv22wkf9vrp81w-bash-interactive-5.2p32-doc"
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/zwgnigy4jvyyhpfd2n8z4prwlrlxqxcj-bash-interactive-5.2p32-info"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/j3300czf8m28lrgzz2l7ns7zb8lql74w-bash-interactive-5.2p32-dev"
+            }
+          ],
+          "store_path": "/nix/store/ci1awvn1fa7wi13pf6rc0603hcg64sg3-bash-interactive-5.2p32"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/k56w4s2vav93hir7lsfw0qkqd97qvqkr-bash-interactive-5.2p32",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/d5ywnwxih93lr25c02h4fm9mkpi4j7bp-bash-interactive-5.2p32-man",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/84yw2kmcqq6qck9xgxcjjg33p9kdv6sv-bash-interactive-5.2p32-debug"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/zgsp080armvazwic7iv6cxdrdiyjn1pj-bash-interactive-5.2p32-dev"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/nzfzvq5hyllx5vn9i6mx713d5s60hgj8-bash-interactive-5.2p32-doc"
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/dzvbr294whzhl08dgmiz8sssqrgw4sdp-bash-interactive-5.2p32-info"
+            }
+          ],
+          "store_path": "/nix/store/k56w4s2vav93hir7lsfw0qkqd97qvqkr-bash-interactive-5.2p32"
+        }
+      }
+    },
+    "nodejs@22": {
+      "last_modified": "2024-10-13T23:44:06Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/d4f247e89f6e10120f911e2e2d2254a050d0f732#nodejs_22",
+      "source": "devbox-search",
+      "version": "22.9.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fhzxbp4pn1qzl18cq08jq4dj152bmmyx-nodejs-22.9.0",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/cn8nmzxfis2bg8h2lqjb6s53xn7j8yyi-nodejs-22.9.0-libv8"
+            }
+          ],
+          "store_path": "/nix/store/fhzxbp4pn1qzl18cq08jq4dj152bmmyx-nodejs-22.9.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/i1siigi0ykw94jzhkl064qqzd1ph6mnj-nodejs-22.9.0",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/1wrwby0q6i8v3igmgr99g64x02jyzgh5-nodejs-22.9.0-libv8"
+            }
+          ],
+          "store_path": "/nix/store/i1siigi0ykw94jzhkl064qqzd1ph6mnj-nodejs-22.9.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nazlzhy6vmjrczc3hxp38zsmxjrbqna8-nodejs-22.9.0",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/bxq12ya55i06rv44q9vfqaxyh5wv0xas-nodejs-22.9.0-libv8"
+            }
+          ],
+          "store_path": "/nix/store/nazlzhy6vmjrczc3hxp38zsmxjrbqna8-nodejs-22.9.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/f9yl8nlgcyazflxc2nj1cr9k9ika7v7z-nodejs-22.9.0",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/fzvjvz5977xms8x6r7yhx3bylaygvr6i-nodejs-22.9.0-libv8"
+            }
+          ],
+          "store_path": "/nix/store/f9yl8nlgcyazflxc2nj1cr9k9ika7v7z-nodejs-22.9.0"
+        }
+      }
+    },
+    "pnpm@9": {
+      "last_modified": "2024-10-21T08:58:42Z",
+      "resolved": "github:NixOS/nixpkgs/56c7c4a3f5fdbef5bf81c7d9c28fbb45dc626611#pnpm",
+      "source": "devbox-search",
+      "version": "9.12.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/svrfivvrw117wkvfyh4nf2arhgr2pspk-pnpm-9.12.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/svrfivvrw117wkvfyh4nf2arhgr2pspk-pnpm-9.12.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6l03988m2jqprvv46snrfaw4s674qbaf-pnpm-9.12.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6l03988m2jqprvv46snrfaw4s674qbaf-pnpm-9.12.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5d99kgqd6gabpxw6b6vafwjnziffvzgs-pnpm-9.12.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5d99kgqd6gabpxw6b6vafwjnziffvzgs-pnpm-9.12.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/94i2iljw9c980166vsfvva0dbd2ffxm5-pnpm-9.12.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/94i2iljw9c980166vsfvva0dbd2ffxm5-pnpm-9.12.2"
+        }
+      }
+    },
+    "vscode@latest": {
+      "last_modified": "2024-10-13T23:44:06Z",
+      "resolved": "github:NixOS/nixpkgs/d4f247e89f6e10120f911e2e2d2254a050d0f732#vscode",
+      "source": "devbox-search",
+      "version": "1.94.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mdlr8182am37p84y5nf57wgrn18wgqja-vscode-1.94.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/mdlr8182am37p84y5nf57wgrn18wgqja-vscode-1.94.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6zzgxf9rczqyzpdyikx297vi3vh52msc-vscode-1.94.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6zzgxf9rczqyzpdyikx297vi3vh52msc-vscode-1.94.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/f4l15i10y91557rn84x1xx24dmlxa6lf-vscode-1.94.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/f4l15i10y91557rn84x1xx24dmlxa6lf-vscode-1.94.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/m5db887cmx6nk99gm5q8hm9dhg7dm0gw-vscode-1.94.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/m5db887cmx6nk99gm5q8hm9dhg7dm0gw-vscode-1.94.2"
+        }
+      }
+    }
+  }
+}

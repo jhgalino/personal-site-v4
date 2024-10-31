@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Picture from "astro/components/Picture.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="header">
+    <h1>Contact</h1>
+    <em>hope I don't get more spam and scams</em>
+  </Fragment>
+  <main>
+    <p>
+      The best way to contact me is through email at <a
+        href="mailto:mail@jhgalino.xyz">mail@jhgalino.xyz.</a
+      >
+    </p>
+    <p>
+      If you really prefer it, I'm also available through <a
+        href="https://www.linkedin.com/in/jhgalino/">LinkedIn</a
+      >.
+    </p>
+    <p>
+      If interested, you can also see my résumé <a href="/Resume-Galino.pdf"
+        >here</a
+      >.
+    </p>
+    <figure>
+      <Picture
+        src="https://imgs.xkcd.com/comics/email.png"
+        inferSize
+        formats={["avif", "webp"]}
+        alt="xkcd comic"
+      />
+      <figcaption>
+        <a href="https://xkcd.com/1467">https://xkcd.com/1467</a>
+      </figcaption>
+    </figure>
+  </main>
+</BaseLayout>

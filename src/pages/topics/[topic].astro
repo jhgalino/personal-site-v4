@@ -1,0 +1,61 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  const topics = Array.from(
+    new Set( // this is to get the unique topics listed in posts
+      posts.flatMap((post) =>
+        post.data.topics.map((topic) => topic.toLowerCase()),
+      ),
+    ),
+  );
+
+  return topics.map((topic) => {
+    return {
+      params: { topic },
+      props: { posts },
+    };
+  });
+}
+
+const { posts } = Astro.props;
+const { topic } = Astro.params;
+const filteredPosts = posts.filter((post) =>
+  post.data.topics.includes(topic.charAt(0).toUpperCase() + topic.substring(1)),
+);
+---
+
+<BaseLayout>
+  <Fragment slot="header">
+    <h1>{topic.charAt(0).toUpperCase() + topic.substring(1)}</h1>
+    <em>Here are some posts about this topic...</em>
+  </Fragment>
+  <ul>
+    {
+      filteredPosts.map((post) => (
+        <li>
+          <div class="post">
+            <p>
+              <a href={`/posts/${post.slug}`}>{post.data.title}</a>
+            </p>
+            <p>{post.data.date}</p>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
+
+<style>
+  ul {
+    list-style-type: armenian;
+  }
+
+  .post {
+		display: flex;
+		justify-content: space-between;
+		min-height: 15em;
+	}
+</style>

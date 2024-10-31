@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Picture } from "astro:assets";
+import Chammy from "../assets/IhHtEZh8.jpeg";
+import Naisie from "../assets/caRScrZH.jpeg";
+---
+
+<BaseLayout>
+  <Fragment slot="header">
+    <h1>About Me</h1>
+    <em>or the page where I overshare things about myself</em>
+  </Fragment>
+  <main>
+    <p>Hello again!</p>
+    <p>
+      I am John Henry Galino, although I usually introduce myself as Henry for
+      brevity's sake. My pronouns are he/him. I am currently residing in Metro
+      Manila, Philippines with my wonderful girlfriend and two dogs.
+    </p>
+    <p>
+      My main interest is programming, and all the subfields under it. As such,
+      I have dabbled in areas like systems programming, graphics programming,
+      mobile app development, and of course web programming. I also like
+      exploring non mainstream programming languages when time permits.
+    </p>
+    <p>
+      Apart from programming, I am also interested in archaeology, history and
+      horror films. I might write some posts about those topics in the future.
+      If you're interested, feel free to check those out when I've written them.
+    </p>
+    <p>
+      If you want to see my résumé, you can find it in this <a href="/Resume-Galino.pdf">link</a> or in the
+      Contact page.
+    </p>
+    <section class="dogs">
+      <figure>
+        <Picture
+          src={Naisie}
+          formats={["avif", "webp"]}
+          alt="A small black and white shihtzu"
+          height={500}
+        />
+        <figcaption>Naisie</figcaption>
+      </figure>
+      <figure>
+        <Picture
+          src={Chammy}
+          formats={["avif", "webp"]}
+          alt="A small white shihtzu"
+          height={500}
+        />
+        <figcaption>Chammy</figcaption>
+      </figure>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .dogs {
+    display: flex;
+    justify-content: space-around;
+  }
+</style>
